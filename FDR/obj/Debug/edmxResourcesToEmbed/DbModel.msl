@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FR_DbModelStoreContainer" CdmEntityContainer="DbEntities">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="FR_DbModel.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="Passwords" ColumnName="Passwords" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChuyenNganhs">
+      <EntityTypeMapping TypeName="FR_DbModel.ChuyenNganh">
+        <MappingFragment StoreEntitySet="ChuyenNganh">
+          <ScalarProperty Name="TenChuyenNganh" ColumnName="TenChuyenNganh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DangKyLopHocPhans">
+      <EntityTypeMapping TypeName="FR_DbModel.DangKyLopHocPhan">
+        <MappingFragment StoreEntitySet="DangKyLopHocPhan">
+          <ScalarProperty Name="NhomDangKy" ColumnName="NhomDangKy" />
+          <ScalarProperty Name="NgayDangKy" ColumnName="NgayDangKy" />
+          <ScalarProperty Name="MaLopHocPhan" ColumnName="MaLopHocPhan" />
+          <ScalarProperty Name="MaSinhVien" ColumnName="MaSinhVien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GiangViens">
+      <EntityTypeMapping TypeName="FR_DbModel.GiangVien">
+        <MappingFragment StoreEntitySet="GiangVien">
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Passwords" ColumnName="Passwords" />
+          <ScalarProperty Name="TenChuyenNganh" ColumnName="TenChuyenNganh" />
+          <ScalarProperty Name="HocVi" ColumnName="HocVi" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="MaGiangVien" ColumnName="MaGiangVien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lops">
+      <EntityTypeMapping TypeName="FR_DbModel.Lop">
+        <MappingFragment StoreEntitySet="Lop">
+          <ScalarProperty Name="TenChuyenNganh" ColumnName="TenChuyenNganh" />
+          <ScalarProperty Name="SiSo" ColumnName="SiSo" />
+          <ScalarProperty Name="TenLop" ColumnName="TenLop" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LopHocPhans">
+      <EntityTypeMapping TypeName="FR_DbModel.LopHocPhan">
+        <MappingFragment StoreEntitySet="LopHocPhan">
+          <ScalarProperty Name="MaHocPhan" ColumnName="MaHocPhan" />
+          <ScalarProperty Name="MaGiangVien" ColumnName="MaGiangVien" />
+          <ScalarProperty Name="SiSoSinhVien" ColumnName="SiSoSinhVien" />
+          <ScalarProperty Name="NgayKetThuc" ColumnName="NgayKetThuc" />
+          <ScalarProperty Name="NgayBatDau" ColumnName="NgayBatDau" />
+          <ScalarProperty Name="GioHoc" ColumnName="GioHoc" />
+          <ScalarProperty Name="MaLopHocPhan" ColumnName="MaLopHocPhan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MonHocs">
+      <EntityTypeMapping TypeName="FR_DbModel.MonHoc">
+        <MappingFragment StoreEntitySet="MonHoc">
+          <ScalarProperty Name="TenChuyenNganh" ColumnName="TenChuyenNganh" />
+          <ScalarProperty Name="MaHocPhan" ColumnName="MaHocPhan" />
+          <ScalarProperty Name="Khoa" ColumnName="Khoa" />
+          <ScalarProperty Name="SoTinChi" ColumnName="SoTinChi" />
+          <ScalarProperty Name="TenMonHoc" ColumnName="TenMonHoc" />
+          <ScalarProperty Name="MaMonHoc" ColumnName="MaMonHoc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SinhViens">
+      <EntityTypeMapping TypeName="FR_DbModel.SinhVien">
+        <MappingFragment StoreEntitySet="SinhVien">
+          <ScalarProperty Name="TenLop" ColumnName="TenLop" />
+          <ScalarProperty Name="HoDem" ColumnName="HoDem" />
+          <ScalarProperty Name="TenSinhVien" ColumnName="TenSinhVien" />
+          <ScalarProperty Name="MaSinhVien" ColumnName="MaSinhVien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

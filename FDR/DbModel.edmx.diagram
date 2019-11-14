@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cf57c7f9f96b436daa1dbaf803287c68" Name="Diagram1">
+        <EntityTypeShape EntityType="FR_DbModel.Account" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FR_DbModel.ChuyenNganh" Width="1.5" PointX="0.75" PointY="5" />
+        <EntityTypeShape EntityType="FR_DbModel.DangKyLopHocPhan" Width="1.5" PointX="10.5" PointY="4.75" />
+        <EntityTypeShape EntityType="FR_DbModel.GiangVien" Width="1.5" PointX="3" PointY="7.625" />
+        <EntityTypeShape EntityType="FR_DbModel.Lop" Width="1.5" PointX="3" PointY="4.75" />
+        <EntityTypeShape EntityType="FR_DbModel.LopHocPhan" Width="1.5" PointX="8.25" PointY="4.375" />
+        <EntityTypeShape EntityType="FR_DbModel.MonHoc" Width="1.5" PointX="3" PointY="1.375" />
+        <EntityTypeShape EntityType="FR_DbModel.SinhVien" Width="1.5" PointX="5.25" PointY="4.625" />
+        <AssociationConnector Association="FR_DbModel.FK_GiangVien_ThuocTrong_ChuyenNganh" />
+        <AssociationConnector Association="FR_DbModel.FK_Lop_ThuocTrong_ChuyenNganh" />
+        <AssociationConnector Association="FR_DbModel.FK_MonHoc_Thuoc_ChuyenNghanh" />
+        <AssociationConnector Association="FR_DbModel.FK_LopHocPhan_DangKyLopHocPhan" />
+        <AssociationConnector Association="FR_DbModel.FK_SinhVien_DangKy_LopHocPhan" />
+        <AssociationConnector Association="FR_DbModel.FK_GiangVien_Day_LopHocPhan" />
+        <AssociationConnector Association="FR_DbModel.FK_SinhVien_ThuocTrong_Lop" />
+        <AssociationConnector Association="FR_DbModel.FK_LopHocPhan_ThuocTrong_HocPhan" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
